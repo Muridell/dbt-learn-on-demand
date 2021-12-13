@@ -4,6 +4,6 @@ with customer as(
         first_name,
         last_name
 
-    from dbt-tutorial.jaffle_shop.customers)
+    from {{source('jaffle-shop','customers')}})
 
     select *  from customer
