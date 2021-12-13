@@ -6,4 +6,4 @@ with customer as(
 
     from {{source('jaffle_shop','customers')}})
 
-    select *  from customer
+    select *  from customer;
